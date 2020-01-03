@@ -3,8 +3,7 @@
     <title>Vinita Suthar</title>
     <style>
       body {
-         background-color: black;
-
+        background-color: black !important;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       }
       .bannerText {
@@ -33,49 +32,55 @@
         height: 1000px;
         width: 100%;        
       }
-      .aboutMe{
-        text-decoration:underline;
-        
 
-
+      .aboutMetext{
+        color: silver;        
       }
-      h1::first-letter{
+
+      #aboutMeHeader::first-letter{
         color: crimson;
         font-size:larger;
       }
-      .aboutMetext{
 
+      #aboutMeHeader {
+        color: silver;
       }
-      
 
       #aboutMeSection {
-        position: relative;
-        background-image: url("aboutme.jpg");
-        background-repeat: no-repeat;
-        background-size: 300px 450px;
-        background-attachment: scroll;
-        width: 300px;
-        height: 450px;
-        top:auto;
-        
+        padding: 30px;;
+      }
 
+      #aboutMeImg {
+        width: 360px;
+        height: 450px;
       }
 
     </style>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   </head>
   <body>
     <div id="bannerDiv">
       <center><span  class="bannerText">I am Vinita Suthar</span></center>
       <h2 class="subtext">- Self Taught Developer</h2> 
-   </div>
-   <div id="aboutMeSection">
-      <center><span class="aboutMe">
-      <h1>About me</h1>
+    </div>
+    <div id="aboutMeSection">
+      <h1 id="aboutMeHeader">About me</h1>
+      <div class="row">
+        <div class="">
+          <img src="aboutme.jpg" id="aboutMeImg">
+        </div>
+        <div class="col-2">
+          <center>
+            <span class="aboutMe"></span>
+            <p class="aboutMetext">I'm vinita suthar from udaipur,a city in Rajasthan, India. i'm a BCA student and yes i'm also a web developer and app developer.  
+            </p>
+          </center>
+        </div>
+        <div class="col-7">
+        </div>
+      </div>
+    </div>
 
-        </span>
-        <p class="aboutMetext">I'm vinita suthar from udaipur,a city in Rajasthan, India. i'm a BCA student and yes i'm also a web developer and app developer.  
-        </p>
-      </center>
-   </div>
+    <script src="/bootstrap/js/bootstrap.min.js" ></script>
   </body>
 </html>
