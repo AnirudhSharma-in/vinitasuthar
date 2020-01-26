@@ -1,4 +1,3 @@
-<html>
   <head>
     <title>Vinita Suthar</title>
     <style>
@@ -6,6 +5,107 @@
         background-color:rgb(3, 3, 3) !important;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       }
+      @keyframes dropHeader {
+        0% {
+          transform: translateY(-100%)
+        }
+        100% {
+          transform: translateY(0)
+        }
+      }
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 0.75s
+}
+
+header ul {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+header li {
+    display: inline-block
+}
+
+header a {
+    display: block;
+    color: #fff;
+    padding: 15px
+}
+
+header a:hover {
+    color: #798b97;
+    text-decoration: none;
+}
+
+header a:focus {
+    color: #798b97;
+    text-decoration: none
+}
+
+header.active {
+    display: block
+}
+
+header.sticky {
+    position: fixed;
+    z-index: 999
+}
+
+#menu.active {
+    display: block
+}
+#menu.active {
+    display: block
+}
+
+#mobile-menu-open {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    right: 15px;
+    top: 10px;
+    color:white;
+    font-size: 1.5em;
+    z-index: 20;
+    padding: 0 7px;
+    border-radius: 4px;
+    background: #fff
+}
+
+#mobile-menu-close {
+    display: none;
+    text-align: right;
+    width: 100%;
+    background: #fff;
+    font-size: 1.5em;
+    padding-right: 15px;
+    padding-top: 10px;
+    cursor: pointer;
+    color: #ebf5fc
+}
+
+#mobile-menu-close span {
+    font-size: 0.5em;
+    text-transform: uppercase
+}
+
+#mobile-menu-close i {
+    vertical-align: middle
+}
+
+
       .bannerText {
         font-size: 140px !important;
         height: 100%;
@@ -32,6 +132,7 @@
         height: 1000px;
         width: 100%;        
       }
+      
 
       .aboutMetext{
       color:gray;
@@ -140,213 +241,201 @@
         padding-left: 150px;
        
       }
-      .skills{
-        color: white;
-        
-        
+      
+      #skills {
+    padding: 50px 15px;
+    text-align: center
+}
 
-      }
-      #header{
-        color: white;
-        padding-top: 50px;
-      }
-      #csslogo{
-        position: relative;
-        height: 400px;
-        width: 300px;
-        color: white;
-        padding-left: 150px;
-      }
-      #cssname{
-        position: relative;
-        color: white;
-        padding-left: 195px;
-        top: -100px;
-      }
-      #htmllogo{
-        position: relative;
-        height: 900px;
-        width: 800px;
-        color: white;
-        padding-left: 650px;
-        top: -690px;
+#skills h2 {
+    color:white;
+    margin-bottom: 50px
+}
 
-      }
-      #htmlname{
-        position: relative;
-        
-        color: white;
-        padding-left: 680px;
-        top: -1040px;
+#skills ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
 
-      }
-      #mysqllogo{
-        position: relative;
-        height: 1440px;
-        width: 1340px;
-        color: white;
-        padding-left: 1150px;
-        top: -1900px;
+}
 
-      }
-      #mysqlname{
-        position: relative;
-        
-        color: white;
-        padding-left: 1200px;
-        top:-2535px;
+#skills li {
+    display: inline-block;
+    margin: 7px;
+    padding: 5px 10px;
+    color: white;
+    background: #e4e4ea;
+    list-style: none;
+    cursor: default;
+    font-size: 1.2em
+}
+.social a {
+    display: block;
+    color:white;
+    padding: 10px
+}
 
-      }
-      #javascriptlogo{
-        position: relative;
-        height: 400px;
-        width: 300px;
-        color: white;
-        padding-left: 150px;
-        top: -2500px;
-      }
-      #javascriptname{
-        position: relative;
-        color: white;
-        padding-left: 150px;
-        top: -2600px;
-      }
-      #jquerylogo{
-        position: relative;
-        height: 250px;
-        width:830px;
-        color: white;
-        padding-left: 635px;
-        top: -2870px;
-      }
-      #jqueryname{
-        position: relative; 
-        color: white;
-        padding-left: 690px;
-        top: -2890px;
-      }
-      #javalogo{
-        position: relative;
-        height: 250px;
-        width: 1370px;
-        color: white;
-        padding-left: 1140px;
-        top: -3170px;
-      }
-      #javaname{
-        position: relative; 
-        color: white;
-        padding-left: 1215px;
-        top: -3180px;
-      } 
-      #gitlogo{
-        position: relative;
-        height: 420px;
-        width: 320px;
-        color: white;
-        padding-left: 150px;
-        top: -3150px;
+.social a i:hover {
+  color: white;
+    
+}
 
-      }
-      #gitname{
-        position: relative;
-        color: white;
-        padding-left:210px;
-        top: -3240px;
+/* .svg { */
+    /* filter: saturate(0) brightness(0) invert(0);              */
+/* } */
 
-      }
-      #phplogo{
-        position: relative;
-        height: 260px;
-        width:830px;
-        color: white;
-        padding-left: 635px;
-        top: -3520px;
+.invert {
+    filter: invert(0.5);             
+}
+ .stack-item > img.svg:hover { 
+     filter: saturate(1) brightness(1) invert(0);   
+} 
 
-      }
-      #phpname{
-        position: relative; 
-        color: white;
-        padding-left: 700px;
-        top: -3540px;
+ .stack-item img { 
+     max-height: 50px; 
+     margin-bottom: 30px; 
+ } 
 
-      }
-      #clogo{
-        position: relative;
-        height: 160px;
-        width: 1370px;
-        color: white;
-        padding-left: 1140px;
-        top: -3770px;
+.stack-item > h4 {
+    font-weight: lighter;
+    color: white;
+}
 
-      }
-      #cname{
-        position: relative; 
-        color: white;
-        padding-left: 1251px;
-        top: -3745px;
+img {
+    max-width: 100%;
+}
 
-      }
-      #cpluspluslogo{
-        position: relative;
-        height: 170px;
-        width: 320px;
-        color: white;
-        padding-left: 150px;
-        top: -3630px;
-
-      }
-      #cplusplusname{
-        position: relative;
-        color: white;
-        padding-left:200px;
-        top: -3600px;
-
-      }
-      #reactlogo{
-        position: relative;
-        height: 260px;
-        width:830px;
-        color: white;
-        padding-left: 635px;
-        top: -3900px;
-
-      }
-      #reactname{
-        position: relative; 
-        color: white;
-        padding-left: 690px;
-        top: -3910px;
-
-      }
-      #bootstraplogo{
-        position: relative;
-        height: 170px;
-        width: 1340px;
-        color: white;
-        padding-left: 1160px;
-        top: -4146px;
+.stack-item {
+    margin-bottom: 50px;
+}
 
 
-      }
-      #bootstrapname{
-        position: relative; 
-        color: white;
-        padding-left: 1181px;
-        top: -4115px;
 
-      }
+      
+      #contact {
+    padding: 50px 15px;
+    background: #000;
+    text-align: center
+}
+
+#contact h2 {
+    margin: 0 0 15px 0;
+    color: #fff;
+    font-weight: 500
+}
+
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto
+}
+
+#contact-form input,
+#contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    background: #fff;
+    color: #000;
+    transition: .5s ease all;
+    -webkit-transition: .5s ease all;
+    -moz-transition: .5s ease all;
+    -ms-transition: .5s ease all;
+    -o-transition: .5s ease all;
+}
+
+#contact-form input::-webkit-input-placeholder,
+#contact-form textarea::-webkit-input-placeholder {
+    color: #000
+}
+
+#contact-form input:-moz-placeholder,
+#contact-form textarea:-moz-placeholder {
+    color: #000;
+    opacity: 1
+}
+
+#contact-form input::-moz-placeholder,
+#contact-form textarea::-moz-placeholder {
+    color: #000;
+    opacity: 1
+}
+
+#contact-form input:-ms-input-placeholder,
+#contact-form textarea:-ms-input-placeholder {
+    color: #000
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    background: rgb(236, 236, 236)
+}
+
+#contact-form textarea {
+    height: 150px;
+    resize: none
+}
+
+#contact-form button {
+    display: block;
+    width: 100%;
+    background: #fff;
+    padding: 5px 10px;
+    border: none;
+    color: #000;
+    font-weight: 700;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: .5s ease all;
+    -webkit-transition: .5s ease all;
+    -moz-transition: .5s ease all;
+    -ms-transition: .5s ease all;
+    -o-transition: .5s ease all;
+}
+
+#contact-form button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+}
+
+
      
       
     </style>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   </head>
   <body>
+    <header>
+    <ul id="menu" class="shadow">
+      <li>
+          <a href="#firstline">About</a>
+      </li>
+      <li>
+          <a href="#educationheader">Education</a>
+      </li>
+      <li>
+          <a href="#header">Skills</a>
+      </li>
+      <li>
+          <a href="#contact">Contact</a>
+      </li>
+  </ul>
+  </header>
     <div id="bannerDiv">
-      <center><span  class="bannerText">Vinita Suthar</span></center>
+      <center><span  class="bannerText">VINITA SUTHAR</span></center>
       <h2 class="subtext">- Self Taught Developer</h2> 
     </div>
+    <div id="mobile-menu-open" class="shadow-large">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+  <!-- end -->
+  <div id="mobile-menu-close">
+    <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+</div>
+    
       <div id="firstline">
+
         <center><span id="firstline">Nice to see you</span></center>
         <center><span id="secondline">here!</span></center>
         <center><span id="aboutMeHeader">Briefly About me</span></center>
@@ -361,7 +450,7 @@
               <p>From beginning I have hobbies like drawing, listening music, traveling
                 I always love to be part of this computer digital world.
               </p>
-              <p> So I stepped up in to computer field, where anything is possible by adding some codes. So now I got some serious passion for computer field.</p>
+              <p> So I stepped up into computer field, where anything is possible by adding some codes. So now I got some serious passion for computer field.</p>
             </div>
             <div id="leftshift">
               <p> I started my dream project, which is developing own Web Portfolio. I hope you will like it.
@@ -376,6 +465,7 @@
       <div id="educationheader">
         <span id="educationheader">EDUCATION</span>
       </div>
+     
       <div id="aboutbca">
         <p> &#8226;BCA(Bachelor of Computer Application)</p>
       </div>
@@ -391,87 +481,42 @@
       <div id="bcaexplain">
         <p> Portfolio , Website , Android Developing </p>
       </div>
-
-      <div class="skills">
+      <div id="skills">
+        <h2 class="heading">My Stack of Languages/Technologies</h2>
         
-          <center><h1 id="header">My Stack of Languages/Technologies</h1></center>
-          <center><ul>-------------------------------------------------</ul></center>
-          
-        </div>
-        <div >
-          <img src="css.svg" id="csslogo">
-          
-          <div id="cssname">
-            <h2>CSS</h2>
-          </div>
-        </div>
-        <div>
-          <img src="html5.svg" id="htmllogo">
-          <div id="htmlname">
-            <h2>HTML</h2>
+        <div class="row justify-content-md-center">
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="php.png" class="" alt="PHP" ><h4>PHP</h4></div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="cplus.jpg" class="svg" alt="C++" data-hover="#f72c1f"><h4>C++</h4></div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="html5.svg"  class="svg" alt="HTML" data-hover="#ea6227"><h4>HTML</h4></div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="js.svg"  class="svg" alt="JavaScript" data-hover="#f7d437"><h4>JavaScript</h4></div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="css.svg"  class="svg" alt="Css" data-hover="#119cd3"><h4>CSS</h4></div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="mysql.svg" class="svg" alt="MySql" data-hover="#055a87"><h4>MySql</h4></div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="jv.png"  class="" alt="jQuery"><h4>jQuery</h4></div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="java.png" class="svg" alt="JAVA" data-hover="#e54537"><h4>JAVA</h4></div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="react.svg"  class="svg" alt="React" data-hover="#51bbd7"><h4>React</h4></div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="c.jpg"  class="svg" alt="C" data-hover="#197cf7"><h4>C</h4></div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="git.svg"  class="svg" alt="Git" data-hover="#e94e31"><h4>Git</h4></div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="bootstrap.png"  class="svg" alt="bootstrap" data-hover="#e94e31"><h4>Bootstrap</h4></div>
 
           </div>
         </div>
-        <div>
-          <img src="mysql.svg" id="mysqllogo">
-          <div id="mysqlname">
-            <h2>MySQL</h2>
+    </div>
+ 
+      
+        <div id="contact">
+          <h2>Get in Touch</h2>
+          <div id="contact-form">
+              <form method="POST" action="https://formspree.io/email@email.com">
+                  <input type="hidden" name="_subject" value="Contact request from personal website" />
+                  <input type="email" name="_replyto" placeholder="Your email" required>
+                  <textarea name="message" placeholder="Your message" required></textarea>
+                  <button type="submit">Send</button>
+              </form>
           </div>
-        </div>
-        <div>
-          <img src="js.svg" id="javascriptlogo">
-          <div id="javascriptname">
-            <h2>javaScript</h2>
-          </div>
-        </div>
-        <div>
-          <img src="jv.png" id="jquerylogo">
-          <div id="jqueryname">
-           <h2>jquery</h2>
-          </div>
-        </div>
-        <div>
-          <img src="java.png" id="javalogo">
-          <div id="javaname">
-            <h2>JAVA</h2>
-          </div>
-        </div>
-        <div>
-          <img src="git.svg" id="gitlogo">
-          <div id="gitname">
-            <h2>Git</h2>
-          </div>
-        </div>
-        <div>
-          <img src="php (2).png" id="phplogo">
-          <div id="phpname">
-            <h2>PHP</h2>
-          </div>
-        </div>
-        <div>
-          <img src="c.jpg" id="clogo">
-          <div id="cname">
-            <h2>C</h2>
-          </div>
-        </div>
-        <div>
-          <img src="cplus.jpg" id="cpluspluslogo">
-          <div id="cplusplusname">
-            <h2>C++</h2>
-          </div>
-        </div>
-        <div>
-          <img src="react.svg" id="reactlogo">
-          <div id="reactname">
-            <h2>React</h2>
-          </div>
-        </div>
-        <div>
-          <img src="bootstrap.png" id="bootstraplogo">
-          <div id="bootstrapname">
-            <h2>Bootstrap</h2>
-          </div>
-        </div>
+          <!-- End #contact-form -->
+      </div>
+      <!-- End #contact -->
+      
  
      
     
