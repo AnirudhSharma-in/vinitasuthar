@@ -1,9 +1,11 @@
+<!DOCTYPE html>
+<html>
   <head>
     <title>Vinita Suthar</title>
     <style>
       body {
-        background-color:rgb(0 ,0, 0) !important;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color:black !important;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva , Verdana, sans-serif, ;
       }
       @keyframes dropHeader {
         0% {
@@ -24,7 +26,7 @@
         animation-name: dropHeader;
         animation-iteration-count: 1;
         animation-timing-function: ease;
-        animation-duration: 0.75s
+        animation-duration: 0.75;
       }
 
       header ul {
@@ -107,6 +109,8 @@
 
       .bannerText {
         font-size: 120px !important;
+        font-family: 'Allura', cursive;
+        /* font-family: 'Pacifico', cursive; */
         height: 100%;
         width: 100%;
         color:white;
@@ -124,7 +128,7 @@
 
       #bannerDiv {
         position: relative;
-        background-image: url("hks.jpg");
+        background-image: url("background.jpg");
         background-repeat: no-repeat;
         background-size: 100% 1000px;
         background-attachment: fixed;
@@ -134,8 +138,8 @@
 
       .aboutMetext{
         color:gray;
-        font-family: cursive;
-        font-size: 28px;
+        font-family: 'Satisfy', cursive;
+        font-size: 32px;
         position: relative;
         text-transform:none;
         top: 100px;
@@ -144,12 +148,13 @@
       }
 
       #leftshift{
-        font-size: 28px;
-        font-family:cursive;
+        font-size: 32px;
+        font-family: 'satisfy' , cursive;
         color: gray;
         position: relative;
         text-transform:none;
         max-width: 1205px;
+        text-align: justify;
       }
 
       .btn-rounded-white {
@@ -178,12 +183,13 @@
       #resume{
         color: darkslategrey;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: justify;
         /* padding-left: 40px; */
       }
       #resumetext{
         color: gray;
-        font-size: 28px;
-        font-family: cursive;
+        font-size: 38px;
+        font-family: 'Dr Sugiyama', cursive;
         padding-left: 40px;
       }
       #resume::first-letter{
@@ -197,15 +203,16 @@
       #briefText {
         color: palevioletred;
         font-size: 40px;
-        font-family: cursive;
+        font-family: 'Modak', cursive;
         top: 60px !important;
         position: relative;
+        text-align: justify;
       }
 
       #niceText {
         font-size: 40px;
         color:lightblue;
-        font-family:cursive;
+        font-family: 'Chewy', cursive;
         font-weight: bold;
         text-align: right;
       }
@@ -282,8 +289,8 @@
 
       .subHeading{
         font-size: 50px;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: white;
+        font-family:cursive;
+        color:antiquewhite;
         padding-left: 40px;
       }
 
@@ -302,19 +309,22 @@
 
       .educationDescription {
         color: gray;
-        font-size: 24px;
-        font-family: cursive;
+        font-size: 28px;
+        /* font-family: cursive; */
+        font-family: 'Satisfy', cursive;
         padding-left: 150px;
+        text-align: justify;
       }
 
       #skills {
         padding: 50px 15px;
-        text-align: center
+        text-align: center;
       }
 
       #skills h2 {
         color:white;
-        margin-bottom: 50px
+        margin-bottom: 50px;
+        font-family: 'Bungee Inline', cursive;
       }
 
       #skills ul {
@@ -459,24 +469,26 @@
 
     </style>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Allura|Barriecito|Bungee+Inline|Chewy|Dr+Sugiyama|Modak|Pacifico|Satisfy|Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="si.png">
   </head>
   <body>
     <header>
       <ul id="menu" class="shadow">
         <li>
-          <a href="#niceText">About</a>
+          <a href="#niceText"><img src="https://img.icons8.com/bubbles/50/000000/about-me-female.png"><br>About</a>
         </li>
         <li>
-          <a href="#educationheader">Education</a>
+          <a href="#educationSection"><img src="https://img.icons8.com/bubbles/50/000000/book-reading.png"><br>Education</a>
         </li>
         <li>
-          <a href="#resume">Resume</a>
+          <a href="#resume"><img src="https://img.icons8.com/bubbles/50/000000/resume.png"><br>Resume</a>
         </li>
         <li>
-          <a href="#skills">Skills</a>
+          <a href="#skills"><img src="https://img.icons8.com/bubbles/50/000000/development-skill.png"><br>skills</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact"><img src="https://img.icons8.com/bubbles/50/000000/contact-card.png"><br>Contact</a>
         </li>
       </ul>
     </header>
@@ -536,10 +548,10 @@
       </div>
 
       <div id="resume">
-        <div class="subHeading">RESUME</div>
+        <div class="subHeading">RESUME</div> 
         <p id="resumetext">This is the my resume, which you can download from here.</p>
         <center>
-          <a href="Resume.doc" class="btn-rounded-white" id="downloadBtn" download="VINITA_RESUME.doc">Download Resume<i class="fa fa-download v-middle" aria-hidden="true"></i></a>
+          <a href="Resume.doc" class="btn-rounded-white" id="downloadBtn" download="VINITA_RESUME.doc">Download Resume<img src="https://img.icons8.com/ultraviolet/24/000000/download.png"></a>
         </center>
       </div>
 
