@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <title>Vinita Suthar</title>
@@ -155,6 +154,7 @@
         text-transform:none;
         max-width: 1205px;
         text-align: justify;
+        padding-top: 15px;
       }
 
       .btn-rounded-white {
@@ -180,25 +180,9 @@
         text-decoration: none
       }
 
-      #resume{
-        color: darkslategrey;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-align: justify;
-        /* padding-left: 40px; */
-      }
-      #resumetext{
-        color: gray;
-        font-size: 38px;
-        font-family: 'Dr Sugiyama', cursive;
-        padding-left: 40px;
-      }
-      #resume::first-letter{
-        color: whitesmoke;
-      }
-
       .m-t-100 {
         margin-top: 100px;
-      }
+      } 
 
       #briefText {
         color: palevioletred;
@@ -262,10 +246,6 @@
         .educationDescription {
           font-size: 20px !important;
           padding-left: 60px !important;
-        }
-
-        #resumetext {
-          font-size: 20px;
         }
       }
 
@@ -381,92 +361,7 @@
         margin-bottom: 50px;
       }
 
-      #contact {
-        padding: 50px 15px;
-        background: #000;
-        text-align: center
-      }
-
-      #contact h2 {
-        margin: 0 0 15px 0;
-        color: #fff;
-        font-weight: 500
-      }
-
-      #contact-form {
-        max-width: 500px;
-        margin: 0 auto
-      }
-
-      #contact-form input,
-      #contact-form textarea {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        border: none;
-        margin-bottom: 10px;
-        background: #fff;
-        color: #000;
-        transition: .5s ease all;
-        -webkit-transition: .5s ease all;
-        -moz-transition: .5s ease all;
-        -ms-transition: .5s ease all;
-        -o-transition: .5s ease all;
-      }
-
-      #contact-form input::-webkit-input-placeholder,
-      #contact-form textarea::-webkit-input-placeholder {
-        color: #000
-      }
-
-      #contact-form input:-moz-placeholder,
-      #contact-form textarea:-moz-placeholder {
-        color: #000;
-        opacity: 1
-      }
-
-      #contact-form input::-moz-placeholder,
-      #contact-form textarea::-moz-placeholder {
-        color: #000;
-        opacity: 1
-      }
-
-      #contact-form input:-ms-input-placeholder,
-      #contact-form textarea:-ms-input-placeholder {
-        color: #000
-      }
-
-      #contact-form input:focus,
-      #contact-form textarea:focus {
-        outline: none;
-        background: rgb(236, 236, 236)
-      }
-
-      #contact-form textarea {
-        height: 150px;
-        resize: none
-      }
-
-      #contact-form button {
-        display: block;
-        width: 100%;
-        background: #fff;
-        padding: 5px 10px;
-        border: none;
-        color: #000;
-        font-weight: 700;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        transition: .5s ease all;
-        -webkit-transition: .5s ease all;
-        -moz-transition: .5s ease all;
-        -ms-transition: .5s ease all;
-        -o-transition: .5s ease all;
-      }
-
-      #contact-form button:hover {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
-      }
-
+    
     </style>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Allura|Barriecito|Bungee+Inline|Chewy|Dr+Sugiyama|Modak|Pacifico|Satisfy|Sedgwick+Ave+Display&display=swap" rel="stylesheet">
@@ -482,21 +377,22 @@
           <a href="#educationSection"><img src="https://img.icons8.com/bubbles/50/000000/book-reading.png"><br>Education</a>
         </li>
         <li>
-          <a href="#resume"><img src="https://img.icons8.com/bubbles/50/000000/resume.png"><br>Resume</a>
+          <a href="resume.html"><img src="https://img.icons8.com/bubbles/50/000000/resume.png"><br>Resume</a>
         </li>
         <li>
           <a href="#skills"><img src="https://img.icons8.com/bubbles/50/000000/development-skill.png"><br>skills</a>
         </li>
         <li>
-          <a href="#contact"><img src="https://img.icons8.com/bubbles/50/000000/contact-card.png"><br>Contact</a>
+          <a href="contact.html"><img src="https://img.icons8.com/bubbles/50/000000/contact-card.png"><br>Contact</a>
         </li>
       </ul>
     </header>
+    <!-- end nav.panel -->
     <div id="bannerDiv">
       <center><span  class="bannerText">VINITA SUTHAR</span></center>
       <h2 class="subtext">- Self Taught Developer</h2>
     </div>
-
+<!-- end background text -->
     <div class="">
       <div class="row m-t-100">
         <div class="col-xs-12 col-md-6">
@@ -526,7 +422,7 @@
           </p>
         </div>
       </div>
-
+<!-- end aboutme section -->
       <div class="row">
         <div id="educationSection">
           <div class="subHeading">EDUCATION</div>
@@ -546,15 +442,7 @@
           </div>
         </div>
       </div>
-
-      <div id="resume">
-        <div class="subHeading">RESUME</div> 
-        <p id="resumetext">This is the my resume, which you can download from here.</p>
-        <center>
-          <a href="Resume.doc" class="btn-rounded-white" id="downloadBtn" download="VINITA_RESUME.doc">Download Resume<img src="https://img.icons8.com/ultraviolet/24/000000/download.png"></a>
-        </center>
-      </div>
-
+<!-- end education -->
       <div id="skills">
         <h2 class="heading">My Stack of Languages/Technologies</h2>
 
@@ -574,20 +462,7 @@
         </div>
       </div>
     </div>
-
-    <div id="contact">
-      <h2>Contact me</h2>
-      <div id="contact-form">
-        <form method="POST" action="https://formspree.io/email@email.com">
-          <input type="hidden" name="_subject" value="Contact request from personal website" />
-          <input type="email" name="_replyto" placeholder="Your email" required>
-          <textarea name="message" placeholder="Your message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </div>
-      <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
+    <!-- end skills -->
     <script src="/bootstrap/js/bootstrap.min.js" ></script>
   </body>
 </html>

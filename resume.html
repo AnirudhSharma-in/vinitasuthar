@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>Vinita Suthar | Resume</title>
+        <style>
+            body {
+              background-color:black !important;
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva , Verdana, sans-serif, ;
+            }
+            @keyframes dropHeader {
+                0% {
+                  transform: translateY(-100%)
+                }
+                100% {
+                  transform: translateY(0)
+                }
+            }
+            header {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+                z-index: 10;
+                animation-name: dropHeader;
+                animation-iteration-count: 1;
+                animation-timing-function: ease;
+                animation-duration: 0.75;
+            }
+
+            header ul {
+                display: inline-block;
+                text-align: center;
+                padding: 10px;
+                margin: 0;
+            }
+
+            header li {
+                display: inline-block
+            }
+
+            header a {
+                display: block;
+                color: #fff;
+                padding: 15px
+            }
+
+            header a:hover {
+                color: #798b97;
+                text-decoration: none;
+            }
+
+            header a:focus {
+                color: #798b97;
+                text-decoration: none
+            }
+
+            header.active {
+                display: block
+            }
+
+            header.sticky {
+                position: fixed;
+                z-index: 999
+            }
+
+            .btn-rounded-white {
+                display: inline-block;
+                color: #fff;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 27px;
+                padding-right: 28px;
+                border: 3px solid #fff;
+                border-radius: 30px;
+                transition: .5s ease all;
+                -webkit-transition: .5s ease all;
+                -moz-transition: .5s ease all;
+                -ms-transition: .5s ease all;
+                -o-transition: .5s ease all;
+
+            }
+
+            .btn-rounded-white:hover {
+                color: #000;
+                background: #fff;
+                text-decoration: none
+           }
+
+            #resume{
+                color: darkslategrey;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: justify;
+                /* padding-left: 40px; */
+                padding-top: 80px;
+                padding-bottom: 80px;
+            }
+            #resumeImg{
+
+            }
+
+            #resumetext{
+                color: antiquewhite;
+                font-size: 38px;
+                font-family: 'Dr Sugiyama', cursive;
+                padding-left: 40px;
+            }
+
+            #resume::first-letter{
+                color: whitesmoke;
+            }
+
+            .subHeading{
+                font-size: 50px;
+                font-family:cursive;
+                color:antiquewhite;
+                padding-left: 40px;
+            }
+
+            .subHeading::first-letter{
+                color: darkred;
+            }
+
+        </style>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Allura|Barriecito|Bungee+Inline|Chewy|Dr+Sugiyama|Modak|Pacifico|Satisfy|Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="si.png">
+    </head>
+    <body>
+        <header>
+            <ul id="menu" class="shadow">
+              <li>
+                <a href="index.html"><img src="https://img.icons8.com/bubbles/50/000000/home.png"><br>Home</a>
+              </li>
+              <li>
+                <a href="#downloadBtn"><img src="https://img.icons8.com/bubbles/50/000000/download.png"><br>Download</a>
+              </li>
+              
+            </ul>
+          </header>
+          <!-- navigationpanel end -->
+        <div id="resume">
+            <div class="subHeading">RESUME</div>
+            <p id="resumetext">This is my resume, if you want to download then scroll up.</p>
+            <div id="resumeImg">
+                <img src="resume.jpg" id="">
+            </div>
+            <center><p id="resumetext">Hey, you can download from here.</p></center>
+            <center>
+              <a href="Resume.doc" class="btn-rounded-white" id="downloadBtn" download="VINITA_RESUME.doc">Download Resume<img src="https://img.icons8.com/ultraviolet/24/000000/download.png"></a>
+            </center>
+        </div>
+        <!-- resume end -->
+        <script src="/bootstrap/js/bootstrap.min.js" ></script>
+    </body>
+</html>

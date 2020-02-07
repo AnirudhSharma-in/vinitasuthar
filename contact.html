@@ -1,0 +1,269 @@
+<html>
+    <head>
+        <title>Vinita Suthar | Contact</title>
+        <style>
+            body {
+              background-color:black !important;
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva , Verdana, sans-serif, ;
+            }
+            @keyframes dropHeader {
+                0% {
+                  transform: translateY(-100%)
+                }
+                100% {
+                  transform: translateY(0)
+                }
+            }
+            header {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+                z-index: 10;
+                animation-name: dropHeader;
+                animation-iteration-count: 1;
+                animation-timing-function: ease;
+                animation-duration: 0.75;
+            }
+
+            header ul {
+                display: inline-block;
+                text-align: center;
+                padding: 10px;
+                margin: 0;
+            }
+
+            header li {
+                display: inline-block
+            }
+
+            header a {
+                display: block;
+                color: #fff;
+                padding: 15px
+            }
+
+            header a:hover {
+                color: #798b97;
+                text-decoration: none;
+            }
+
+            header a:focus {
+                color: #798b97;
+                text-decoration: none
+            }
+
+            header.active {
+                display: block
+            }
+
+            header.sticky {
+                position: fixed;
+                z-index: 999
+            }
+            #contact {
+                padding: 50px 15px;
+                background: #000;
+                text-align: center;
+                /* padding-top: 100px; */
+            }
+
+            #contact h2 {
+                margin: 0 0 15px 0;
+                color: #fff;
+                font-weight: 500;
+                font-family: 'Satisfy', cursive;
+            }
+            #contact h2::first-letter{
+                color: darkred;
+            }
+
+            #contact-form {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            #contact-form input,
+            #contact-form textarea {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                border: none;
+                margin-bottom: 10px;
+                background: #fff;
+                color: #000;
+                transition: .5s ease all;
+                -webkit-transition: .5s ease all;
+                -moz-transition: .5s ease all;
+                -ms-transition: .5s ease all;
+                -o-transition: .5s ease all;
+            }
+
+            #contact-form input::-webkit-input-placeholder,
+            #contact-form textarea::-webkit-input-placeholder {
+                color: #000
+            }
+
+            #contact-form input:-moz-placeholder,
+            #contact-form textarea:-moz-placeholder {
+                color: #000;
+                opacity: 1
+            }
+
+            #contact-form input::-moz-placeholder,
+            #contact-form textarea::-moz-placeholder {
+                color: #000;
+                opacity: 1
+            }
+
+            #contact-form input:-ms-input-placeholder,
+            #contact-form textarea:-ms-input-placeholder {
+                color: #000
+            }
+
+            #contact-form input:focus,
+            #contact-form textarea:focus {
+                outline: none;
+                background: rgb(236, 236, 236)
+            }
+
+            #contact-form textarea {
+                height: 150px;
+                resize: none
+            }
+
+            #contact-form button {
+                display: block;
+                width: 100%;
+                background: #fff;
+                padding: 5px 10px;
+                border: none;
+                color: #000;
+                font-weight: 700;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                transition: .5s ease all;
+                -webkit-transition: .5s ease all;
+                -moz-transition: .5s ease all;
+                -ms-transition: .5s ease all;
+                -o-transition: .5s ease all;
+            }
+
+            #contact-form button:hover {
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+            }
+            .map {
+                margin: 0 0 25px;
+                padding-top: 10px;
+                line-height: 0;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .map iframe {
+                border: none;
+                width: 100%;
+                height: 450px;
+            }
+
+            .span4 h3{
+                color: white;
+                padding-top: 100px;
+                padding-left: 70px;
+            }
+            .span4 h3::first-letter{
+                color: darkred;
+            }
+  /*------ mail & address------- */
+            .address-1 {
+                overflow: hidden;
+            }
+            .address-1 strong {
+                color: white;
+                display: block;
+                font-weight:bold;
+                padding-left: 50px;
+            }
+            .address-1 span {
+                display: inline-block;
+                width: 80px;
+                color: #ffffff;
+            }
+            #mail-1 {
+                text-decoration: underline;
+                color: #e85356;
+            }
+            #mail-1:hover {
+                text-decoration: none;
+            }
+            .mail-2 {
+                text-align: right;
+            }
+            .mail-2 a {
+                color: #3c3c3c;
+            }
+            .mail-2 a:hover {
+                text-decoration: underline;
+            }
+            .overflow{
+                font-weight: bold;
+                padding-left: 50px;
+            }
+             
+        </style>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Allura|Barriecito|Bungee+Inline|Chewy|Dr+Sugiyama|Modak|Pacifico|Satisfy|Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="si.png">
+    </head>
+    <body>
+      <header>
+        <ul id="menu" class="shadow">
+          <li>
+            <a href="index.html"><img src="https://img.icons8.com/bubbles/50/000000/home.png"><br>Home</a>
+          </li>
+          <li>
+            <a href="#mail-1"><img src="https://img.icons8.com/bubbles/50/000000/email.png"><br>Email</a>
+          </li>
+          <li>
+            <a href="#contact"><img src="https://img.icons8.com/bubbles/50/000000/messaging-.png"><br>Message</a>
+          </li>
+          
+        </ul>
+      </header>
+      <!-- navigationpanel end -->
+      
+      <article class="span4">
+        <h3>Contact info</h3>
+        <div class="map">
+        
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58039.14824559446!2d73.6720389202967!3d24.608282148279898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e56550a14411%3A0xdbd8c28455b868b0!2sUdaipur%2C+Rajasthan%2C+India!5e0!3m2!1sen!2sus!4v1529304365220" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+       
+        </div>
+        <address class="address-1">
+          <strong>Udaipur<br>
+          Rajasthan, India.</strong>
+          <div class="overflow"><br>
+            <span>email:</span> <a href="#" id="mail-1">vinita9999suthar@gmail.com</a><br>
+          </div>
+          </address>
+        </article>
+        <!-- map end -->
+        <div id="contact">
+          <h2>Drop your message here</h2>
+          <div id="contact-form">
+            <form
+            action="https://formspree.io/xleblkdo"
+            method="POST"
+          >
+          <input type="hidden" name="_subject" value="Contact request from personal website" />
+          <input type="email" name="_replyto" placeholder="Your email" required>
+          <textarea name="message" placeholder="Your message" required></textarea>
+          <button type="submit">Send</button>
+          </form>
+          </div>
+               <!-- End #contact-form -->
+        </div>
+        <!-- End #contact -->
+        
+        <script src="/bootstrap/js/bootstrap.min.js" ></script>
+    </body>
+</html>
